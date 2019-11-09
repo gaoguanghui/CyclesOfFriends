@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
 
 body {
     background-color: white;
@@ -79,19 +82,54 @@ body {
     margin-bottom: 10px;
 }
 
-.item .content>div:nth-child(3) {
+.item:nth-of-type(1) .content>div:nth-child(3) {
     width: 250px;
     height: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px 5px;
 }
-.item .content>div:nth-child(3)>a {
+.item:nth-of-type(1) .content>div:nth-child(3)>a {
+    width: 80px;
+    height: 80px;
     background-color: rosybrown;
 }
 
-.item .content>div:nth-child(3)>a img:nth-child(5) {
-    background-color: purple;
+.item:nth-of-type(1) .content>div:nth-child(3)>a:nth-child(1) {
+    background: url("./images/humen1.png") no-repeat center;
+    background-size: contain;
+}
+.item:nth-of-type(1) .content>div:nth-child(3)>a:nth-child(2) {
+    background: url("./images/humen2.png") no-repeat center;
+    background-size: contain;
+}
+.item:nth-of-type(1) .content>div:nth-child(3)>a:nth-child(3) {
+    background: url("./images/humen3.png") no-repeat center;
+    background-size: contain;
+}
+.item:nth-of-type(1) .content>div:nth-child(3)>a:nth-child(4) {
+    background: url("./images/humen4.png") no-repeat center;
+    background-size: contain;
+}
+.item:nth-of-type(1) .content>div:nth-child(3)>a:nth-child(5) {
+    background: url("./images/humen5.png") no-repeat center;
+    background-size: contain;
+}
+.item:nth-of-type(1) .content>div:nth-child(3)>a:nth-child(6) {
+    background: url("./images/humen6.png") no-repeat center;
+    background-size: contain;
+}
+.item:nth-of-type(1) .content>div:nth-child(3)>a:nth-child(7) {
+    background: url("./images/humen7.png") no-repeat center;
+    background-size: contain;
+}
+.item:nth-of-type(1) .content>div:nth-child(3)>a:nth-child(8) {
+    background: url("./images/humen8.png") no-repeat center;
+    background-size: contain;
+}
+.item:nth-of-type(1) .content>div:nth-child(3)>a:nth-child(9) {
+    background: url("./images/humen9.png") no-repeat center;
+    background-size: contain;
 }
 
 .item .content .timestamp {
@@ -135,4 +173,50 @@ body {
     background-size: cover;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+.item:nth-of-type(2) .content .detail {
+    background-color: #f3f3f5;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+.item:nth-of-type(2) .content .detail>img {
+    background-color: green;
+    width: 42px;
+    height: 42px;
+    margin: 3px 3px;
+    content: url("./images/line.png");
+}
+.item:nth-of-type(2) .content .detail>p {
+    margin-left: 6px;
+    font: 15px/21px "PingFangSC-Regular";
+}
+
+.item:nth-of-type(3) .content>p:nth-child(3) {
+    width: 260px;
+    height: 162px;
+    background: url("./images/girl.png") no-repeat center; 
+    background-size: cover;
+}
+
+.item:nth-of-type(4) .content>p:nth-child(3) {
+    width: 147px;
+    height: 147px;
+    background: url("./images/qrcode.png") no-repeat center; 
+    background-size: cover;
+}
+
+.item:nth-of-type(1) .avatar>img {
+    content: url("./images/town.png");
+}
+.item:nth-of-type(2) .avatar>img {
+    content: url("./images/tonu.png");
+}
+.item:nth-of-type(3) .avatar>img {
+    content: url("./images/fans.png");
+}
+.item:nth-of-type(4) .avatar>img {
+    content: url("./images/lefex.png");
 }
