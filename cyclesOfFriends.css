@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+.header {
+    background: url("./images/cover.jpeg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 319px;
+    position: relative;
+}
+
+.header>h1 {
+    font: 44px/62px "PingFangSC-Semibold";
+    color: white;
+    text-align: center;
+    padding-top: 111px;
+}
+
+.header-user {
+    position: absolute;
+    bottom: -20px;
+    right: 12px;
+    display: flex;
+    justify-content: right;
+}
+.header-user>p {
+    color: white;
+    font: 17px/24px "PingFangSC-Semibold";
+    margin-bottom: 32px;
+    margin-top: 15px;
+    margin-right: 24px;
+}
+.header-user>img {
+    width: 71px;
+    height: 71px;
+    border-radius: 6px;
+}
+
+.main>ol {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main .item {
+    padding: 10px;
+    border-bottom: 1px solid #EBEBEC;
+    display: flex;
+}
+.item .avatar {
+    width: 44px;
+    height: 44px;
+}
+.item .avatar>img {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    background-color: red;
+}
+
+.item .content {
+    margin-left: 10px;
+}
+.item .content>p:nth-of-type(1) {
+    font: 17px/24px "PingFangSC-Regular";
+    color: #4D638F;
+    margin-bottom: 10px;
+}
+
+.item .content>p:nth-of-type(2) {
+    font: 17px/24px "PingFangSC-Regular";
+    color: #121212;
+    margin-bottom: 10px;
+}
+
+.item .content>div:nth-child(3) {
+    width: 250px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px 5px;
+}
+.item .content>div:nth-child(3)>a {
+    background-color: rosybrown;
+}
+
+.item .content>div:nth-child(3)>a img:nth-child(5) {
+    background-color: purple;
+}
+
+.item .content .timestamp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .timestamp>p {
+    font-size: 14px;
+    color: #B7B7B7;
+    padding: 5px 0px;
+}
+
+.content .timestamp>a>img {
+    width: 29px;
+    vertical-align: middle;
+}
+
+.content .comments {
+    background: #F3F3F5;
+    border-radius: 2px;
+}
+
+.comments p {
+    font: 15px/21px;
+    font-family: "PingFangSC-Regular";
+    color: #000;
+    padding: 5px;
+}
+
+.content .comments>p:nth-of-type(1) {
+    color: #536892;
+}
+
+.content .comments>p:nth-of-type(1)::before {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 10px;
+    background: url("./images/star_small.png");
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 5px;
+}
